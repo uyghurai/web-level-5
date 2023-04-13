@@ -27,7 +27,6 @@ function App() {
   };
   const addColor = (e) => {
     e.preventDefault();
-    //const isValidHex = /^#(?:[0-9a-fA-F]{3}){1,2}$/.test(inputValue);
 
     if (isValidHex(inputValue)) {
       setColors([...colors, inputValue]);
@@ -45,15 +44,13 @@ function App() {
   return (
     <div className="App">
       <h1>Color Palette Picker</h1>
-      <form onSubmit={addColor}>
-        <input
-          type="text"
-          placeholder="Enter a HEX color code"
-          value={inputValue}
-          onChange={(e) => setInputValue(e.target.value)}
-        />
-        <button type="submit">Add Color</button>
-      </form>
+      <input
+        type="text"
+        placeholder="Enter a HEX color code"
+        value={inputValue}
+        onChange={(e) => setInputValue(e.target.value)}
+      />
+      <button onClick={addColor}>Add Color</button>
       {error && <p className="error">{error}</p>}
       <div className="palette">
         {colors.map((color, index) => (
