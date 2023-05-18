@@ -2,7 +2,7 @@ import HarryPotter from './Harry_Potter_character_poster.jpg';
 import Hermione from './Hermione1.webp';
 import Ron from './ron.webp';
 
-export const characters = [
+const characters = [
     {
         name: 'Harry Potter',
         image: HarryPotter,
@@ -17,5 +17,7 @@ export const characters = [
         name: 'Ron Weasley',
         image: Ron,
         description: 'The Boy Who Had No Choice',
-    }
+    },
 ];
+
+export default characters;

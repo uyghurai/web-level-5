@@ -37,16 +37,14 @@ function App() {
     }
   };
 
-  const clearPalette = () => {
-    setColors([]);
-  };
+  const clearPalette = () => { setColors([]); };
 
   return (
     <div className="App">
       <h1>Color Palette Picker</h1>
       <input
         type="text"
-        placeholder="Enter a HEX color code"
+        placeholder="Enter a HEX color code start with #"
         value={inputValue}
         onChange={(e) => setInputValue(e.target.value)}
       />
