@@ -3,7 +3,6 @@ import './App.css';
 import HeaderText from './components/HeaderText';
 import { PokemonDataContext } from './PokemonDataContext';
 import PokemonListView from './components/PokemonListView';
-import PokemonDetailsView from './components/PokemonDetailsView';
 
 
 function App() {
@@ -19,7 +18,6 @@ function App() {
       <div className="pokedex-app">
         <HeaderText />
         <PokemonListView />
-        <PokemonDetailsView />
       </div>
     </PokemonDataContext.Provider>
   );
