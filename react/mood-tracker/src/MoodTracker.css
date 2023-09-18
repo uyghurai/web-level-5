@@ -1,0 +1,89 @@
+@media (max-width: 480px) {
+    .mood-tracker {
+      width: 100%;
+      box-sizing: border-box;
+    }
+  
+    .mood-tracker h1 {
+      font-size: 1.5rem;
+    }
+  
+    .mood-tracker button {
+      font-size: 0.9rem;
+      padding: 0.3rem;
+    }
+  }
+  
+.mood-tracker {
+    font-family: Arial, sans-serif;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: #f2f2f2;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .mood-tracker h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .mood-tracker select {
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  
+  .mood-tracker button {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 1rem;
+  }
+  
+  .mood-tracker button:hover {
+    background-color: #45a049;
+  }
+  
+  .mood-tracker ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .mood-tracker li {
+    padding: 0.5rem;
+    background-color: #e0e0e0;
+    margin-bottom: 0.5rem;
+    border-radius: 4px;
+  }
+
+.mood-tracker ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .mood-tracker li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    background-color: #e0e0e0;
+    margin-bottom: 0.5rem;
+    border-radius: 4px;
+  }
+  
+  .mood-tracker .trash-icon {
+    cursor: pointer;
+    color: #c0392b;
+  }
+  
+  .mood-tracker .trash-icon:hover {
+    color: #e74c3c;
+  }
+  
